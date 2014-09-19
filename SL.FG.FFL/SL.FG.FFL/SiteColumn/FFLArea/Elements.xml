@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">  
+  <Field
+       ID="{4a3de304-0110-471d-a34a-a862944eb9ef}"
+       Name="FFLArea"
+       DisplayName="Area"
+       Type="Text"
+       Required="FALSE"
+       Group="Fatima Group">
+  </Field>
+</Elements>

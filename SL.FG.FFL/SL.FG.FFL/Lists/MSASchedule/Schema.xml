@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="MSASchedule" Direction="$Resources:Direction;" Url="Lists/MSASchedule" EnableContentTypes="TRUE" MultipleTypes="TRUE" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      
+    <ContentType ID="0x01009e9499572b10460c8cee75e0686d8791" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" /><FieldRef ID="{64cd368d-2f95-4bfc-a1f9-8d4324ecb007}" Name="EventDate" /><FieldRef ID="{2684f9f2-54be-429f-ba06-76754fc056bf}" Name="EndDate" /><FieldRef ID="{b9941f07-4977-4925-9b2b-b5b4fcf5de01}" Name="FFLScheduleName" /><FieldRef ID="{a1c1b777-b5f3-4d90-8b63-8827fca6779e}" Name="FFLScheduleDesignation" /><FieldRef ID="{a6f37903-ca28-453c-a5c5-3ef7597642b4}" Name="FFLDepartments" /><FieldRef ID="{9d1b80cd-0cd9-42c9-bcb7-e120a20b51a0}" Name="FFLSection" /><FieldRef ID="{4a3de304-0110-471d-a34a-a862944eb9ef}" Name="FFLArea" /><FieldRef ID="{a78e1d1b-968c-47ea-9ced-37546265b323}" Name="MSAFormLink" /><FieldRef ID="{0188fb88-5dae-4411-af80-cf95eb1aef6b}" Name="MSAStatus" /><FieldRef ID="{fcfcfc89-e7ef-4542-b30f-35290dcbbd77}" Name="FFLEmailAddress" /></FieldRefs></ContentType><ContentType ID="0x010200A1CF5F6E17FB4F35B5C0F3042A00D296" Name="FFLMSAScheduleContentType" Group="Custom Content Types" Description="Content Type to add events" Inherits="TRUE" Version="0"><FieldRefs><FieldRef ID="{b9941f07-4977-4925-9b2b-b5b4fcf5de01}" DisplayName="FFL Schedule Name" Required="FALSE" Name="FFLScheduleName" /><FieldRef ID="{a1c1b777-b5f3-4d90-8b63-8827fca6779e}" DisplayName="FFL Schedule Designation" Required="FALSE" Name="FFLScheduleDesignation" /><FieldRef ID="{a6f37903-ca28-453c-a5c5-3ef7597642b4}" DisplayName="Departments" Required="FALSE" Name="FFLDepartments" /><FieldRef ID="{9d1b80cd-0cd9-42c9-bcb7-e120a20b51a0}" DisplayName="Section" Required="FALSE" Name="FFLSection" /><FieldRef ID="{4a3de304-0110-471d-a34a-a862944eb9ef}" DisplayName="Area" Required="FALSE" Name="FFLArea" /><FieldRef ID="{a78e1d1b-968c-47ea-9ced-37546265b323}" DisplayName="MSA Form Link" Required="FALSE" Name="MSAFormLink" Format="Hyperlink" /><FieldRef ID="{0188fb88-5dae-4411-af80-cf95eb1aef6b}" DisplayName="MSA Status" Required="FALSE" Name="MSAStatus" Format="Dropdown" ShowInDisplayForm="FALSE" ShowInEditForm="FALSE" ShowInNewForm="FALSE" /><FieldRef ID="{fcfcfc89-e7ef-4542-b30f-35290dcbbd77}" DisplayName="FFL Email Address" Required="FALSE" Name="FFLEmailAddress" ShowInDisplayForm="FALSE" ShowInEditForm="FALSE" ShowInNewForm="FALSE" /></FieldRefs></ContentType></ContentTypes>
+    <Fields>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="$Resources:core,Title;" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" /><Field Type="DateTime" ID="{64cd368d-2f95-4bfc-a1f9-8d4324ecb007}" Name="EventDate" DisplayName="$Resources:core,Start_Time;" Format="DateTime" Sealed="TRUE" Required="TRUE" FromBaseType="TRUE" Filterable="FALSE" FilterableNoRecurrence="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="EventDate">
+        <Default>[today]</Default>
+        <FieldRefs>
+          <FieldRef Name="fAllDayEvent" RefType="AllDayEvent" />
+        </FieldRefs>
+      </Field><Field ID="{2684f9f2-54be-429f-ba06-76754fc056bf}" Type="DateTime" Name="EndDate" DisplayName="$Resources:core,End_Time;" Format="DateTime" Sealed="TRUE" Required="TRUE" Filterable="FALSE" FilterableNoRecurrence="TRUE" Indexed="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="EndDate">
+        <Default>[today]</Default>
+        <FieldRefs>
+          <FieldRef Name="fAllDayEvent" RefType="AllDayEvent" />
+        </FieldRefs>
+      </Field><Field ID="{b9941f07-4977-4925-9b2b-b5b4fcf5de01}" Name="FFLScheduleName" DisplayName="FFL Schedule Name" Type="User" Required="FALSE" Group="Fatima Group"></Field><Field ID="{a1c1b777-b5f3-4d90-8b63-8827fca6779e}" Name="FFLScheduleDesignation" DisplayName="FFL Schedule Designation" Type="Text" Required="FALSE" Group="Fatima Group"></Field><Field ID="{a6f37903-ca28-453c-a5c5-3ef7597642b4}" Name="FFLDepartments" DisplayName="Departments" Type="Text" Required="FALSE" Group="Fatima Group"></Field><Field ID="{9d1b80cd-0cd9-42c9-bcb7-e120a20b51a0}" Name="FFLSection" DisplayName="Section" Type="Text" Required="FALSE" Group="Fatima Group"></Field><Field ID="{4a3de304-0110-471d-a34a-a862944eb9ef}" Name="FFLArea" DisplayName="Area" Type="Text" Required="FALSE" Group="Fatima Group"></Field><Field ID="{a78e1d1b-968c-47ea-9ced-37546265b323}" Name="MSAFormLink" DisplayName="MSA Form Link" Type="URL" Format="Hyperlink" Required="FALSE" Group="Fatima Group"></Field><Field ID="{0188fb88-5dae-4411-af80-cf95eb1aef6b}" Name="MSAStatus" DisplayName="MSA Status" Type="Choice" Format="Dropdown" BaseType="Text" FillInChoice="FALSE" Required="FALSE" ShowInDisplayForm="FALSE" ShowInEditForm="FALSE" ShowInNewForm="FALSE" Group="Fatima Group"><CHOICES><CHOICE>Not Started</CHOICE><CHOICE>Completed</CHOICE><CHOICE>Completed (Late)</CHOICE><CHOICE>Waived</CHOICE><CHOICE>Overdue</CHOICE></CHOICES><Default>Not Started</Default></Field><Field ID="{fcfcfc89-e7ef-4542-b30f-35290dcbbd77}" Name="FFLEmailAddress" DisplayName="FFL Email Address" Type="Text" Required="FALSE" ShowInDisplayForm="FALSE" ShowInEditForm="FALSE" ShowInNewForm="FALSE" Group="Fatima Group"></Field></Fields>
+    <Views>
+      
+      
+      
+      
+    <View BaseViewID="0" Type="HTML" RecurrenceRowset="TRUE" TabularView="FALSE" MobileView="TRUE">
+        <Toolbar Type="Standard" />
+        <XslLink>main.xsl</XslLink>
+        <Query>
+          <Where>
+            <DateRangesOverlap>
+              <FieldRef Name="EventDate"></FieldRef>
+              <FieldRef Name="EndDate"></FieldRef>
+              <FieldRef Name="RecurrenceID"></FieldRef>
+              <Value Type="DateTime">
+                <Now />
+              </Value>
+            </DateRangesOverlap>
+          </Where>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noevents_toaddeventclickaddnewevent)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noevents_toaddeventclickaddnewevent_howto)" />
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,AddNewEvent)" />
+          <ParameterBinding Name="MoreAnnouncements" Location="Resource(wss,more_events)" />
+        </ParameterBindings>
+        <ViewFields>
+          
+          
+          
+          
+        <FieldRef Name="EventDate" Explicit="TRUE"></FieldRef><FieldRef Name="LinkTitleNoMenu" Explicit="TRUE"></FieldRef><FieldRef Name="Description" Explicit="TRUE"></FieldRef><FieldRef Name="fRecurrence" Explicit="TRUE"></FieldRef></ViewFields>
+        <RowLimit>10</RowLimit>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="EventDate"></FieldRef>
+          </OrderBy>
+        </Query>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,userinfo_schema_alleventsview;" MobileView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/events.png?rev=23" Url="AllItems.aspx" DefaultBaseView="TRUE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">100</RowLimit>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+        <ViewFields>
+          
+          
+          
+          
+          
+          
+          
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="EventDate"></FieldRef><FieldRef Name="EndDate"></FieldRef><FieldRef Name="FFLArea" /><FieldRef Name="FFLDepartments" /><FieldRef Name="FFLEmailAddress" /><FieldRef Name="FFLScheduleDesignation" /><FieldRef Name="FFLScheduleName" /><FieldRef Name="MSAFormLink" /><FieldRef Name="MSAStatus" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="EventDate"></FieldRef></OrderBy>
+        </Query>
+      </View><View BaseViewID="2" Type="CALENDAR" WebPartZoneID="Main" DisplayName="$Resources:core,userinfo_schema_calendarview;" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/events.png?rev=23" TabularView="FALSE" Url="calendar.aspx" RecurrenceRowset="TRUE" DefaultView="TRUE" MobileUrl="_layouts/15/mobile/viewdaily.aspx">
+        <Toolbar Type="Standard" />
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+        <ViewFields>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+        <FieldRef Name="EventDate"></FieldRef><FieldRef Name="EndDate"></FieldRef><FieldRef Name="Title"></FieldRef><FieldRef Name="FFLScheduleName" /><FieldRef Name="FFLScheduleDesignation" /><FieldRef Name="FFLDepartments" /><FieldRef Name="FFLSection" /><FieldRef Name="FFLArea" /><FieldRef Name="MSAFormLink" /><FieldRef Name="MSAStatus" /><FieldRef Name="FFLEmailAddress" /></ViewFields>
+        <ViewData>
+          <FieldRef Name="Title" Type="CalendarMonthTitle"></FieldRef>
+          <FieldRef Name="Title" Type="CalendarWeekTitle"></FieldRef>
+          <FieldRef Name="Location" Type="CalendarWeekLocation"></FieldRef>
+          <FieldRef Name="Title" Type="CalendarDayTitle"></FieldRef>
+          <FieldRef Name="Location" Type="CalendarDayLocation"></FieldRef>
+        </ViewData>
+        <Query>
+          <Where>
+            <DateRangesOverlap>
+              <FieldRef Name="EventDate"></FieldRef>
+              <FieldRef Name="EndDate"></FieldRef>
+              <FieldRef Name="RecurrenceID"></FieldRef>
+              <Value Type="DateTime">
+                <Month></Month>
+              </Value>
+            </DateRangesOverlap>
+          </Where>
+        </Query>
+      </View><View BaseViewID="3" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,userinfo_schema_curreventsview;" MobileView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/events.png?rev=23" Url="MyItems.aspx" ReqAuth="TRUE" RecurrenceRowset="TRUE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+        <ViewFields>
+          
+          
+          
+          
+          
+          
+          
+        <FieldRef Name="LinkTitle"></FieldRef><FieldRef Name="EventDate"></FieldRef><FieldRef Name="EndDate"></FieldRef></ViewFields>
+        <Query>
+          <Where>
+            <DateRangesOverlap>
+              <FieldRef Name="EventDate" />
+              <FieldRef Name="EndDate" />
+              <FieldRef Name="RecurrenceID" />
+              <Value Type="DateTime">
+                <Now></Now>
+              </Value>
+            </DateRangesOverlap>
+          </Where>
+          <OrderBy>
+            
+          <FieldRef Name="EventDate"></FieldRef></OrderBy>
+        </Query>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>
